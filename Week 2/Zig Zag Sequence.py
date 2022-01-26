@@ -1,3 +1,20 @@
+'''
+DESCRIPTION:
+Given an array of n distinct integers, transform the array into a zig zag sequence
+by permuting the array elements.
+A sequence will be called a zig zag sequence if the first k elements
+in the sequence are in increasing order and the last k elements are
+in decreasing order, where k=(n+1)/2.
+You need to find the lexicographically smallest zig zag sequence of the given array.
+INPUT FORMAT:
+first line = number of test cases t
+second line = length n of array a
+third line = elements of array a
+OUTPUT FORMAT:
+For each test cases, print the elements of the transformed zig zag sequence
+in a single line.
+'''
+
 def findZigZagSequence(a, n):
     a.sort()
     mid = int((n)/2)
