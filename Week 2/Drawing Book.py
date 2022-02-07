@@ -19,24 +19,6 @@ SAMPLE OUTPUT:
 1
 '''
 
-# !/bin/python3
-
-import math
-import os
-import random
-import re
-import sys
-
-
-#
-# Complete the 'pageCount' function below.
-#
-# The function is expected to return an INTEGER.
-# The function accepts following parameters:
-#  1. INTEGER n
-#  2. INTEGER p
-#
-
 def pageCount(n, p):
     if n % 2 != 0:
         if p in (1, n, n - 1):
@@ -65,17 +47,4 @@ def pageCount(n, p):
                 l, r = l - 2, r - 2
                 flips += 1
             return flips
-
-
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-    n = int(input().strip())
-
-    p = int(input().strip())
-
-    result = pageCount(n, p)
-
-    fptr.write(str(result) + '\n')
-
-    fptr.close()
+        
