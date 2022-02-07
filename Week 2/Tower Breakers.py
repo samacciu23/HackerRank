@@ -24,7 +24,8 @@ Player 1 removes 2 pieces leaving 1. Towers are 1 and 3 units tall.
 Player 2 matches again. Towers are both 1 unit tall.
 Player 1 has no move and loses. Return 2.
 SAMPLE INPUT:
-2 2
+n=2 
+m=2
 SAMPLE OUTPUT:
 2
 '''
